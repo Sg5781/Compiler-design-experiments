@@ -1,0 +1,26 @@
+.data
+array: .word 1, 2, 3, 4, 5  # Declare an array of integers
+.text
+.globl main
+main:
+li $t0, 2                # Load the index value into register $t0
+li $t1, 10               # Load the value 10 into register $t1 (for assignment)
+sll $t2, $t0, 2          # Calculate the offset (index * 4, as each integer occupies 4 bytes)
+la $t3, array            # Load the base address of the array
+add $t3, $t3, $t2        # Add the offset to the base address to get the address of array[2]
+sw $t1, 0($t3)           # Store the value 10 into array[2]
+li $v0, 4                # Prepare to print string (code 4)
+la $a0, new_line         # Load address of the new line string
+syscall                  # Perform system call to print the string
+li $v0, 1                # Prepare to print integer (code 1)    
+li $t4, 0                # Initialize loop counter
+loop:
+lw $a0, ($t3)            # Load the value from array into $a0
+syscall                  # Print the integer in $a0
+addi $t3, $t3, 4         # Move to next element of the array
+addi $t4, $t4, 1         # Increment loop counter
+blt $t4, 5, loop         # Branch back to loop if loop counter is less than 5    
+li $v0, 10               # Prepare to exit program (code 10)
+syscall                  # Perform system call to exit
+.data
+new_line: .asciiz "\n"       # New line string for printing

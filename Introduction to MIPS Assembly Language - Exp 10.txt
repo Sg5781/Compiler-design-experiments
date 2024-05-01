@@ -1,0 +1,51 @@
+### Introduction:
+The MIPS (Microprocessor without Interlocked Pipeline Stages) architecture stands as one of the prominent examples of Reduced Instruction Set Computing (RISC) architectures. Developed by researchers at Stanford University in the 1980s, MIPS gained widespread adoption in various computing systems due to its simplicity, efficiency, and elegance.
+
+Simulation plays a crucial role in understanding complex computer architectures like MIPS. By simulating the behavior of MIPS processors, researchers and students can gain insights into the inner workings of these systems without the need for physical hardware. This study experiment aims to provide participants with a hands-on experience exploring MIPS architecture through simulation.
+
+### Objectives:
+1. To introduce participants to the fundamental concepts of MIPS architecture and instruction set.
+2. To familiarize participants with the operation and capabilities of a MIPS simulator.
+3. To conduct hands-on experiments to explore different aspects of MIPS architecture and instruction execution.
+
+### Materials:
+- MIPS simulator software: SPIM, MARS, or QtSPIM
+- MIPS assembly language reference materials
+- Experiment worksheets or notebooks
+- Access to a computer system with the simulator installed
+
+### Experimental Procedure:
+1. **Introduction to MIPS Architecture:**
+   - Briefly explain the key features of MIPS architecture, including its 32-bit instruction set, register set, and memory organization.
+   - Provide an overview of MIPS assembly language syntax and basic instruction types (e.g., arithmetic, control transfer, data transfer).
+
+2. **Introduction to MIPS Simulation Software:**
+   - Guide participants through the installation process of the chosen MIPS simulator software.
+   - Demonstrate how to navigate the simulator's user interface and basic functionalities such as loading and executing MIPS assembly code.
+
+3. **Hands-On Exercises:**
+   - **Experiment 1: Basic Arithmetic Operations:**
+     - Participants write MIPS assembly code to perform basic arithmetic operations (addition, subtraction, multiplication, division).
+     - They execute their code in the simulator and observe the results.
+
+   - **Experiment 2: Control Flow Instructions:**
+     - Participants learn about control flow instructions (e.g., branch, jump, procedure calls) and their usage.
+     - They write assembly code involving control flow instructions and execute them in the simulator.
+
+4. **Analysis and Discussion:**
+   - Participants analyze their observations and findings from each experiment.
+   - Facilitate a discussion on the advantages and limitations of MIPS architecture and simulation techniques.
+   - Explore real-world applications and implications of MIPS architecture in modern computing systems.
+
+### Conclusion:
+In conclusion, this study experiment provided participants with a hands-on exploration of MIPS architecture through simulation. By conducting various experiments using a MIPS simulator, participants gained insights into the fundamental concepts of MIPS architecture, instruction execution, and performance characteristics. The experience gained from this experiment can serve as a foundation for further study and research in the field of computer architecture.
+
+### References:
+- Hennessy, John L., and David A. Patterson. "Computer Architecture: A Quantitative Approach." Morgan Kaufmann, 2011.
+- MIPS Assembly Language Programming by Robert Britton, 2003.
+- SPIM Simulator Documentation: http://spimsimulator.sourceforge.net/
+
+### Appendices:
+- Sample MIPS assembly code used in experiments
+- Experiment worksheets with instructions and observations
+- Supplementary materials on advanced MIPS architecture concepts
